@@ -1,0 +1,59 @@
+"ListView": {
+	backgroundColor: "#D6D6D6"
+}
+"ItemTemplate": {
+	backgroundColor: "transparent",
+	height: 170
+}
+".row": {
+	right: 10,
+	left: 10,
+	top: 10,
+	bottom: 10,
+	backgroundColor: 'red',
+	layout: "vertical",
+	borderRadius: 5,
+	borderColor: "silver"
+}
+".rowLevel1": {
+	height: 80,
+	layout: "horizontal",
+	backgroundColor: "#fff"
+}
+".rowLevel2": {
+	height: 70,
+	backgroundColor: "#F5F5F5"
+}
+".subRow": {
+	layout: "vertical"
+}
+".image": {
+	width: 80,
+	height: 80
+}
+".name": {
+	top: 15,
+	font: {
+		fontSize: 18
+	}
+}
+".balance": {
+	font: {
+		fontSize: 14
+	}
+}
+".buttonRow": {
+	layout: "horizontal",
+	width:Ti.UI.SIZE,
+	height:Ti.UI.SIZE
+}
+"Button": {
+	backgroundColor: "#fff",
+	color: "#4B4B4B",
+	width: 60
+}
+".wideBtn": {
+	width: 80,
+	left: 10,
+	right: 10
+}
