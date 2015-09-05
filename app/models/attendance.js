@@ -1,10 +1,11 @@
 exports.definition = {
 	config: {
 		columns: {
-			"studentId": "int",
-			"instractorId": "int",
-			"date": "string",
-			"note": "string"
+			"id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+			"userId": "INTEGER",
+			"supervisorId": "INTEGER", // user.id, with type = S
+			"date": "TEXT",
+			"note": "TEXT"
 		},
 		adapter: {
 			type: "sql",
