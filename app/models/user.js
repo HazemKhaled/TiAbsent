@@ -1,13 +1,13 @@
 exports.definition = {
 	config: {
 		columns: {
-			"id": "int",
-			"name": "string",
-			"email": "string",
-			"password": "string",
-			"type": "string",
-			"pic": "string",
-			"trackId": "id"
+			"id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+			"name": "TEXT",
+			"email": "TEXT",
+			"password": "TEXT",
+			"type": "TEXT", // S = Supervisor , R = Regular user
+			"pic": "TEXT",
+			"trackId": "INTEGER"
 		},
 		adapter: {
 			type: "sql",

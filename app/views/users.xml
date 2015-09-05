@@ -1,20 +1,29 @@
 <Alloy>
 	<Collection src="user" />
-	<Window backgroundColor="red">
-		<ListView top="100" id="list" defaultItemTemplate="myTemplate">
+	<Window>
+		<ListView id="list" defaultItemTemplate="myTemplate">
 			<Templates>
-				<ItemTemplate name="myTemplate" height="100">
-					<View class="container">
-						<ImageView bindId="myImage"/>
-						<View class="subContainer">
-							<Label bindId="myName" class="name"/>
-							<Label bindId="mySubTitle"/>
+				<ItemTemplate name="myTemplate">
+					<View class="row">
+						<View class="rowLevel1">
+							<ImageView bindId="myImage" class="image" />
+							<View class="subRow">
+								<Label bindId="myName" class="name"/>
+								<Label bindId="myBalance" class="balance"/>
+							</View>
+						</View>
+						<View class="rowLevel2">
+							<View class="buttonRow">
+								<Button>Absent</Button>
+								<Button class="wideBtn">Premission</Button>
+								<Button>Leave</Button>
+							</View>
 						</View>
 					</View>
 				</ItemTemplate>
 			</Templates>
 			<ListSection dataCollection="user" dataTransform="transfomer">
-				<ListItem myImage:image="{image}" myName:text="{name}" mySubTitle:text="{subtitle}" />
+				<ListItem myImage:image="{pic}" myName:text="{name}" myBalance:text="{balance}" />
 			</ListSection>
 		</ListView>
 	</Window>

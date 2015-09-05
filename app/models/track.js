@@ -1,8 +1,8 @@
 exports.definition = {
 	config: {
 		columns: {
-			"id": "int",
-			"trackName": "string"
+			"id": "INTEGER PRIMARY KEY AUTOINCREMENT",
+			"trackName": "TEXT"
 		},
 		adapter: {
 			type: "sql",
