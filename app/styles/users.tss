@@ -1,15 +1,16 @@
 "ListView": {
-	backgroundColor: "#D6D6D6"
+	backgroundColor: "#D6D6D6",
+	separatorColor: "#D6D6D6"
 }
 "ItemTemplate": {
 	backgroundColor: "transparent",
-	height: 170
+	height: 160
 }
 ".row": {
 	right: 10,
 	left: 10,
-	top: 10,
-	bottom: 10,
+	top: 5,
+	bottom: 5,
 	backgroundColor: 'red',
 	layout: "vertical",
 	borderRadius: 5,
@@ -25,7 +26,8 @@
 	backgroundColor: "#F5F5F5"
 }
 ".subRow": {
-	layout: "vertical"
+	layout: "vertical",
+	width: Titanium.UI.FILL
 }
 ".image": {
 	width: 80,
@@ -52,8 +54,14 @@
 	color: "#4B4B4B",
 	width: 60
 }
+"Button[platform=android]": {
+	width: 70
+}
 ".wideBtn": {
 	width: 80,
 	left: 10,
 	right: 10
+}
+".wideBtn[platform=android]": {
+	width: 100
 }
