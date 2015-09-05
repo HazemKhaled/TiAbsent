@@ -1,17 +1,14 @@
 <Alloy>
-	<Window class="container" >
-        <ImageView id="bannerimage" top="50" image="/images/logo.png"/> 
-        	
-    
-		<TextField id="userNameTextField" top="150" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" hintText="User Name" width="250" />
-		<TextField id="passwordTextField" top="200" passwordMask="True" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" hintText="Password" width="250" />
+	<Window class="container"  layout="vertical">
+		<ImageView id="bannerimage" top="10" width="60%" image="/images/logo.png"/>
+
+			<Label left="10" top="20">Email</Label>
+			<TextField left="10" right="10" id="userNameTextField" color="black" hintText="User Name"  />
+			<Label left="10" top="10">Password</Label>
+			<TextField left="10" right="10"  id="passwordTextField" passwordMask="True"  color="#336699" hintText="Password"  />
 			
-			<View >
-				
-				<Button id="loginButton" onClick="login"  top="250" title="LogIn"></Button>
+				<Button id=loginButton" onClick="login" top="15" title="LogIn" ></Button>
 				<!--<Button id="loginButton" top="250" title="Forget Password"></Button>-->
-	
-			</View>
-			</Window>
-		
+
+	</Window>
 </Alloy>
