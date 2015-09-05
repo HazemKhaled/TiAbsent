@@ -1,8 +1,8 @@
-#appname: TiAttendance
-#publisher: hazemkhaled
-#url: http://
-#image: appicon.png
-#appid: eg.gov.iti.attendance
-#desc: undefined
-#type: mobile
-#guid: e5c6de9f-0d24-4fb4-9222-3dd61667a8ff
+#appname:TiAttendance
+#publisher:hazemkhaled
+#url:http://iti.gov.eg
+#image:appicon.png
+#appid:eg.gov.iti.attendance
+#desc:undefined
+#type:mobile
+#guid:e5c6de9f-0d24-4fb4-9222-3dd61667a8ff
