@@ -1,0 +1,21 @@
+<Alloy>
+	<Collection src="user" />
+	<Window backgroundColor="red">
+		<ListView top="100" id="list" defaultItemTemplate="myTemplate">
+			<Templates>
+				<ItemTemplate name="myTemplate" height="100">
+					<View class="container">
+						<ImageView bindId="myImage"/>
+						<View class="subContainer">
+							<Label bindId="myName" class="name"/>
+							<Label bindId="mySubTitle"/>
+						</View>
+					</View>
+				</ItemTemplate>
+			</Templates>
+			<ListSection dataCollection="user" dataTransform="transfomer">
+				<ListItem myImage:image="{image}" myName:text="{name}" mySubTitle:text="{subtitle}" />
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>
