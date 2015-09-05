@@ -1,5 +1,17 @@
 <Alloy>
-	<Window class="container">
-		<Label id="label" onClick="doClick">Hello, World</Label>
-	</Window>
+	<Window class="container" >
+        <ImageView id="bannerimage" top="50" image="/images/logo.png"/> 
+        	
+    
+		<TextField id="userNameTextField" top="150" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" hintText="User Name" width="250" />
+		<TextField id="passwordTextField" top="200" passwordMask="True" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" hintText="Password" width="250" />
+			
+			<View >
+				
+				<Button id="loginButton" onClick="login"  top="250" title="LogIn"></Button>
+				<!--<Button id="loginButton" top="250" title="Forget Password"></Button>-->
+	
+			</View>
+			</Window>
+		
 </Alloy>
