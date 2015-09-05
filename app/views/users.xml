@@ -1,7 +1,8 @@
 <Alloy>
 	<Collection src="user" />
-	<Window>
-		<ListView id="list" defaultItemTemplate="myTemplate">
+	<Window title="Track #1" onOpen="setActionBar">
+		<ActionBar displayHomeAsUp="true" onHomeIconItemSelected="closeMe" />
+		<ListView id="list" defaultItemTemplate="myTemplate" onItemclick="openReport">
 			<Templates>
 				<ItemTemplate name="myTemplate">
 					<View class="row">
@@ -14,9 +15,9 @@
 						</View>
 						<View class="rowLevel2">
 							<View class="buttonRow">
-								<Button>Absent</Button>
-								<Button class="wideBtn">Premission</Button>
-								<Button>Leave</Button>
+								<Button bindId="absentBtn">Absent</Button>
+								<Button bindId="premissionBtn" class="wideBtn">Premission</Button>
+								<Button bindId="leaveBtn">Leave</Button>
 							</View>
 						</View>
 					</View>
