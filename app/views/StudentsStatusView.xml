@@ -1,0 +1,37 @@
+<Alloy>
+	<View class="container">
+		
+		 <ListView id="studentStatusListView" defaultItemTemplate="studentStatusTemplate">
+
+            <!-- The Templates tag sets the ListView's templates property -->
+
+            <Templates>
+
+                <!-- Define your item templates within the Templates tags or use the
+                     Require tag to include a view that only contains an ItemTemplate -->
+
+                <ItemTemplate name="studentStatusTemplate">
+                    <Label bindId="name" id="name" />
+                    <Button id="doAbsent" title="A" />
+                    <Button id="doAbsentWithPermission" title="AP" />
+
+                    <Button id="doLate" title="L" />
+                </ItemTemplate>
+
+            </Templates>
+
+            <ListSection headerTitle="Students">
+
+                <!-- You can specify any ListItem or ListDataItem properties in ListItem -->
+
+                <!-- Specify data to bind to the item template with inline attributes
+                     defined as <bindId>:<Ti.UI.Component.property> -->
+
+              
+                <ListItem name:text="Ahmed Ali"/>
+            </ListSection>
+        </ListView>
+        
+        
+	</View>
+</Alloy>

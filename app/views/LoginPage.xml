@@ -1,0 +1,9 @@
+<Alloy>
+	<View class="container">
+		<TextField id="userNameTextField" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" hintText="User Name" width="250" height="60" />
+		<TextField id="passwordTextField" passwordMask="True" borderStyle="Ti.UI.INPUT_BORDERSTYLE_ROUNDED" color="#336699" hintText="Password" width="250" height="60" />
+			
+		<Button id="loginButton" systemButton="Titanium.UI.iPhone.SystemButton.DONE"></Button>
+	</View>
+	
+</Alloy>

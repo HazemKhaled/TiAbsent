@@ -1,0 +1,12 @@
+<Alloy>
+	<Window class="container">
+		<ListView id="list" >
+			<ListSection >
+				<ListItem title="Open Source Application Developer"/>
+				<ListItem title="Telcom Application Developer"/>
+				<ListItem title="Cloud Development"/>
+				<ListItem title="BigData Development"/>
+			</ListSection>
+		</ListView>
+	</Window>
+</Alloy>
